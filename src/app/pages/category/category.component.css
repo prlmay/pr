@@ -1,0 +1,39 @@
+.header-block {
+    background: var(--Lavender, #F4F0F8);
+    height: 348px;
+    margin-bottom: 128px;
+}
+h1 {
+    padding-top: 80px;
+    color: var(--Black, #232536);
+    text-align: center;
+    font-family: Sen;
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 64px; /* 114.286% */
+    letter-spacing: -2px;
+}
+h1 + p {
+    color: var(--Medium-grey, #6D6E76);
+    text-align: center;
+    width: 515px;    
+    margin: auto;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; /* 175% */
+}
+h1 ~ div {
+    color: var(--Black, #232536);
+    text-align: center;
+    margin-top: 32px;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px; /* 125% */
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}

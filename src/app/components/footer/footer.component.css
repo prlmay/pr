@@ -1,0 +1,244 @@
+.nav-block {
+    height: 80px;
+    background: #232536;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.pages a {
+    color: var(--Light, #FFF);
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    margin-right: 24px;
+}
+nav:first-child a>img {
+    width: 140px;
+    height: 28.354px;
+    /* padding-top: 25px; */
+    margin-left: 83px;
+}
+footer {
+
+    background: var(--Black, #232536);
+    margin-top: 128px;
+}
+.footer-block {
+    padding: 59px 80px 56px 80px;
+    /* margin-top: 54.65px; */
+    padding: 80px 64px;
+}
+.back-col {
+    height: 256px;
+    display: flex;
+    flex-shrink: 0;
+    justify-content: center;
+    align-items: center;
+    /* opacity: 0.05; */
+    background: #ffffff08;
+}
+.footer-block  h2 {
+    color: #FFF !important;
+    font-family: Sen;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 48px; /* 133.333% */
+    letter-spacing: -2px;
+    width: 562px;
+}
+footer nav {
+    padding-top: 80px;
+}
+.last-block{
+    margin-top: 48px;
+}
+.last-block p {
+    color: var(--Light, #FFF);
+    opacity: 0.7;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; /* 175% */
+}
+.last-block p + div {
+    color: var(--Light, #FFF);
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; /* 175% */
+}
+.last-block.d-flex {
+    justify-content: space-between;
+}
+.last-block.d-flex a img {
+    margin-right: 16px;
+}
+.d-flex {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.last-block.d-flex {
+    justify-content: space-between !important
+}
+.last-block {
+    margin-top: 48px;
+}
+
+@media screen and (max-width: 1200px) {
+    .container {
+        width: 98%;
+    }
+    footer input {
+        margin-bottom: 24px;
+    }
+}
+@media screen and (max-width: 992px) {
+    .footer-block {
+        padding: 62px 45px;
+    }
+    .footer-block h2 {
+        font-size: 27px;
+        width: 98%;
+    }
+    footer input {
+        margin-bottom: 16px;
+        width: 270px;
+    }
+    footer input + button {
+        margin-left: 68px;
+        
+        padding: 10px 35px;
+    }
+    .pages a {
+        margin-right: 16px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .footer-block {
+        padding: 55px 15px;
+    }
+    .back-col {
+        width: 100%;
+    }
+    footer {
+        margin-top: 88px;
+    }
+    form input  {
+        width: 100%;
+    }
+    .pages a {
+        margin-right: 8px;
+        font-size: 14px;
+    }
+    footer form {
+        display: grid;
+        padding-left: 72px;
+        margin: 0;
+    }
+    .footer-block h2 {
+        margin-left: 28px;
+        width: 190px;
+        font-size: 23px;
+    }
+    footer form input {
+        width: 170px;
+        font-size: 14px;
+    }
+    footer input + button {
+        margin-left: 0px;
+        padding: 10px 35px;
+    }
+    .last-block p + div {
+        margin-bottom: 16px;
+    }
+}
+@media screen and (max-width: 587px) {
+    nav:first-child a>img {
+        margin-left: 0;
+    }
+}
+@media screen and (max-width: 576px) {
+    .container {
+        width: 98%;
+        
+    }
+    nav {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .pages {
+        display: none;
+    }
+    .pages a {
+        margin-right: 19px;
+        font-size: 17px;
+    }
+    .footer-block {
+        padding: 53px 8px;
+    }
+    footer {
+        margin-top: 64px;
+    }
+    footer nav {
+        padding-top: 40px;
+    }
+    .pages {
+        margin-left: 24px;
+    }
+    footer footer {
+        padding-left: 42px;
+    }
+    .footer-block h2 {
+        margin-left: 14px;
+        width: 164px;
+        font-size: 23px;
+        line-height: 46px;
+    }
+    .last-block.d-flex {
+        flex-direction: column;
+    }
+    .last-block .social {
+        margin-top: 16px;
+    }
+}
+@media screen and (max-width: 400px) {
+    .container {
+        width: 98%;
+    }
+    .footer-block h2 {
+        margin-left: 0;
+        width: 90px;
+        font-size: 14px;
+        line-height: 29px;
+    }
+    .footer-block {
+        padding: 30px 8px;
+    }
+    nav:first-child a>img {
+        width: 133px;
+        height: 23.354px;
+        /* padding-top: 25px; */
+    }
+    footer nav {
+        padding-top: 26px;
+    }
+    .last-block p + div {
+        font-size: 15px;
+    }
+}
+@media screen and (max-width: 375px) {
+    footer nav:first-child a>img {
+        width: 119px;
+        height: auto;
+    }
+}

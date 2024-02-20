@@ -1,1 +1,14 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('./assets/fonts/transfonter.org/stylesheet.css');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration-line: none;
+}
+:root {
+    --white: #ffffff;
+    --light-grey: #edf0f1;
+    --violet: #FFD050;
+    --dark-violet: #592EA9;
+    --black: #21232a;
+}

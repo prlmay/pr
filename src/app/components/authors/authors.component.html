@@ -1,0 +1,25 @@
+<section class="secBlock5">
+    <div class="container">
+        <h2>List of Authors</h2>
+        <div class="d-flex">
+            <!-- <div class="mini-block4">
+                @for (item of authors; track item) {
+                    <img [src]="item.image" >
+                    <h3>{{item.name}}</h3>
+                    <p>{{item.position}}</p>
+                }
+            </div> -->
+            <div *ngFor="let item of authors" class="mini-block4">
+                <img [src]="item.image" >
+                <h3>{{item.name}}</h3>
+                <p>{{item.position}}</p>
+                <div *ngFor=" let item of soc " class="social">
+                    <a href="#"><img [src]="item.facebook"></a>
+                    <a href="#"><img [src]="item.twitter"></a>
+                    <a href="#"><img [src]="item.instagram"></a>
+                    <a href="#"><img [src]="item.linkedin"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

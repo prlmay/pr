@@ -1,0 +1,209 @@
+.container {
+    margin: auto;
+    width: 1280px;
+}
+h1 {
+    color: var(--Black, #232536);
+    margin-top: 64px;
+    font-family: Sen;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 64px; /* 133.333% */
+    letter-spacing: -2px;
+}
+h1 + .des {
+    opacity: 0.32;
+    background: #6D6E76;
+    width: 100%;
+    height: 1px;
+    margin-top: 32px;
+}
+.d-flex {
+    display: flex;
+    justify-content: space-around;
+}
+.mini-block {
+    margin-top: 64px;
+    margin-bottom: 64px;
+} 
+.mini-block > img {
+    width: 490px;
+    height: 318px;
+}
+.m-55 {
+    margin-top: 55px;
+}
+.m-55 > a {
+    color: var(--Purple, #592EA9);
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px; /* 125% */
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.m-55 h2 {
+    color: var(--Black, #232536);
+    width: 602.892px;
+    font-family: Sen;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 48px; /* 133.333% */
+    letter-spacing: -2px;
+    margin-bottom: 16px;
+}
+.m-55 p {
+    color: var(--Medium-grey, #6D6E76);
+    width: 624px;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; /* 175% */
+}
+.secBlock2 > .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.secBlock2 h3 {
+    margin-left: 17px;
+}
+.secBlock2 h3 > a {
+    color: var(--Medium-grey, #6D6E76);
+    text-align: center;
+    font-family: Sen;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px; /* 133.333% */
+}
+.secBlock2 h3 > a:hover {
+    color: var(--Black, #232536);
+    text-align: center;
+    font-family: Sen;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px; /* 142.857% */
+    letter-spacing: -1px;
+}
+.secBlock3 {
+    margin-top: 67px;
+    margin-bottom: 48px;
+}
+.secBlock3  h2 {
+    color: var(--Black, #232536);
+    font-family: Sen;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 48px; /* 133.333% */
+    letter-spacing: -2px;
+}
+@media screen and (max-width: 1208px) {
+    .m-55 p, .m-55 h2  {
+        width: 98%;
+    }
+    .m-55 {
+        padding-left: 16px;
+    }
+    .mini-block > img {
+        width: 422px;
+        height: auto;
+        background-size: cover;
+    }
+}
+@media screen and (max-width: 992px) {
+    .container {
+        width: 98%;
+    }
+    .m-55 h2 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+}
+@media screen and (max-width: 834px) {
+    .mini-block img {
+        width: 370px;
+        height: auto;
+        background-size: inherit;
+    }
+}
+@media screen and (max-width: 768px) {
+    .mini-block > img {
+        width: 337px;
+        height: auto;
+        background-size: contain;
+    }
+    .m-55 {
+        margin-top: 0;
+        /* padding-left: 0; */
+    }
+    .m-55 h2 {
+        font-size: 24px;
+        line-height: 35px;
+        margin-bottom: 7px;
+    }
+    .m-55 > h4{
+        margin-bottom: 10px;
+    }
+    .m-55 p {
+        font-size: 15px;
+        line-height: 25px;
+    }
+}
+@media screen and (max-width: 656px) {
+    .block1 {
+        height: 2073px;
+    }
+    .block1 .d-flex {
+        flex-wrap: wrap;
+    }
+    .mini-block > img {
+        height: 240px;
+    }
+   
+} 
+@media screen and (max-width: 593px) {
+    .block1 {
+        height: 1719px
+    }
+}
+@media screen and (max-width: 576px){
+    .mini-block {
+        margin-top: 28px;
+        margin-bottom: 0px;
+        height: 400px;
+    }
+    .mini-block p{
+        width: 98%;
+    }
+    .m-55 {
+        padding-left: 86px;
+        padding-top: 16px;
+    }
+}
+@media screen and (max-width: 433px){
+    .m-55 {
+        padding-left: 40px;
+        padding-top: 16px;
+    }
+    .secBlock2 {
+        display: none;
+    }
+    .secBlock3 {
+        margin-top: 30px;
+        margin-bottom: -90px;
+    }
+}
+@media screen and (max-width: 400px)  {
+    h1 {
+        margin-top: 20px;
+        font-size: 38px;
+    }
+}
