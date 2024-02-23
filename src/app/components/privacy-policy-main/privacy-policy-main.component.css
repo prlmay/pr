@@ -1,0 +1,148 @@
+.header-block {
+    background: var(--Lavender, #F4F0F8);
+    height: 256px;
+}
+h1 {
+    color: var(--Black, #232536);
+    text-align: center;
+    font-family: Sen;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 64px; /* 133.333% */
+    letter-spacing: -2px;
+    padding: 80px 0 4px 0 ;
+}
+h1 + p {
+    color: var(--Black, #232536);
+    text-align: center;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; /* 175% */
+    opacity: 0.6;
+}
+.container {
+    margin: auto;
+    width: 1280px;
+}
+.block1 > h2 {
+    color: var(--Black, #232536);
+    font-family: Sen;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 64px; /* 133.333% */
+    letter-spacing: -2px;
+    width: 716.857px;
+    margin: 0 auto 32px;
+}
+.block2 > h2 {
+    color: var(--Black, #232536);
+    width: 714.756px;
+    font-family: Sen;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 48px; /* 133.333% */
+    letter-spacing: -2px;
+    margin: 32px auto 24px;
+}
+section {
+    margin-top: 128px;
+}
+section p {
+    color: var(--Dark-Grey, #4C4C4C);
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; /* 175% */
+    width: 768px;
+    margin: auto;
+}
+.d-flex {
+    display: flex;
+    justify-content: space-evenly;
+}
+@media screen and (max-width: 1300px)  {
+    .header-block {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 992px) {
+    .container {
+        width: 98%;
+    }
+    section p {
+        width: 708px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .container {
+        width: 98%;
+    }
+    section p {
+        width: 540px;
+    }
+    .block1 > h2, .block2 > h2  {
+        width: 559px;
+    }
+    .block1 > h2 {
+        font-size: 41px;
+    }
+    .block2 > h2 {
+        font-size: 32px;
+    }
+}
+@media screen and (max-width: 576px) {
+    .container {
+        width: 98%;
+    }es {
+        display: none;
+    }
+    section {
+        margin-top: 86px;
+    }
+    .block1 > h2, .block2 > h2  {
+        width: 95%;
+    }
+    .block1 > h2 {
+        font-size: 37px;
+    }
+    .block2 > h2 {
+        font-size: 27px;
+        line-height: 39px;
+        letter-spacing: -1px;
+    }
+    section p {
+        width: 93%;
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 400px) {
+    .container {
+        width: 98%;
+    }
+    .footer-block h2 {
+        margin-left: 0;
+        width: 90px;
+        font-size: 14px;
+        line-height: 29px;
+    }
+    .block1 > h2 {
+        font-size: 32px;
+        margin-bottom: 12px;
+    }
+    section {
+        margin-top: 54px;
+    }
+    h1 {
+        font-size: 43px;
+        padding-top: 50px;
+    }    
+    .header-block {
+        height: 202px;
+    }
+}

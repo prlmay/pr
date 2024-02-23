@@ -1,0 +1,21 @@
+<header>
+    <div class="header-block"  *ngFor="let item of haeder">
+        <div>
+            <img [src]="item.authorImage" alt="images">
+            <div>
+                <h3>{{item.authorName}}</h3>
+                <p>{{item.data}}</p>
+            </div>
+        </div>
+        <h1>{{item.title}}</h1>
+        <div>
+            <img [src]="item.category.image" alt="image">
+            <h4>{{item.category.name}}</h4>
+        </div>
+    </div>
+</header>
+<section>
+    <div class="container">
+        <img src="../../../assets/images/image3/image1.png" alt="image" class="img1">
+    </div>
+</section>

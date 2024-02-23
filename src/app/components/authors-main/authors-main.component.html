@@ -1,0 +1,17 @@
+<main>
+    <section>
+        <div class="container">
+            <div class="title">
+                <h2> My Posts</h2>
+                <div class="d-flex" *ngFor="let item of posts">
+                    <img [src]="item.image" alt="">
+                    <div class="block">
+                        <a routerLink="/layout/blog-post">{{item.title}}</a>
+                        <h2>{{item.description}}</h2>
+                        <p>{{item.shortDescription}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>

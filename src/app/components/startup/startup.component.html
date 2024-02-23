@@ -1,1 +1,53 @@
-<p>startup works!</p>
+<main>
+    <section class="secBlock1">
+        <div class="container">
+            <div class="d-flex">
+                <div class="block1">
+                    <div class="d-flex" *ngFor="let item of catPost">
+                        <img [src]='item.image' alt="image">
+                        <div class="column">
+                            <h4>{{item.description.name}}</h4>
+                            <h2>{{item.description.title}}</h2>
+                            <p>{{item.description.shortDescription}}</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="block2">
+                    <h2>Categories</h2>
+                    <div *ngFor="let item of categories" class="des">
+                        <img [src]="item.description.image" alt="">
+                        <h3>{{item.description.name}}</h3>
+                    </div>
+                    <div class="tags">
+                        <h2>All Tags</h2>
+                        <div class="d-flex">
+                            <div class="business">
+                                <h4><a routerLink=""> Business</a></h4>
+                            </div>
+                            <div class="experience">
+                                <h4>Experience</h4>
+                            </div>
+                        </div>
+                        <div class="d-flex">
+                            <div class="screen">
+                                <h4>Screen</h4>
+                            </div>
+                            <div class="technology">
+                                <h4>Technology</h4>
+                            </div>
+                        </div>
+                        <div class="d-flex">
+                            <div class="marketing">
+                                <h4>Marketing</h4>
+                            </div>
+                            <div class="life">
+                                <h4>Life</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+</main>

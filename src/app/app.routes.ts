@@ -48,24 +48,24 @@ export const routes: Routes = [
           path: 'category',
           component: CategoryComponent,
           title: 'Category',
-          children: [
-            {
-              path: 'business',
-              component: BussinessComponent
-            },
-            {
-              path: 'startUp',
-              component: StartupComponent
-            },
-            {
-              path: 'economy',
-              component: EcanomyComponent
-            },
-            {
-              path: 'technology',
-              component: TechnologyComponent
-            }
-          ]
+          // children: [
+          //   {
+          //     path: 'business',
+          //     component: BussinessComponent
+          //   },
+          //   {
+          //     path: 'startUp',
+          //     component: StartupComponent
+          //   },
+          //   {
+          //     path: 'economy',
+          //     component: EcanomyComponent
+          //   },
+          //   {
+          //     path: 'technology',
+          //     component: TechnologyComponent
+          //   }
+          // ]
         },
         {
           path: 'author',

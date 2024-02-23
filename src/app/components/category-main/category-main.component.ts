@@ -2,12 +2,12 @@ import { NgFor } from '@angular/common';
 import { Component } from '@angular/core';
 import { CategoryPost } from '../../models/catagory-post';
 import { Categories } from '../../models/categories';
-import { RouterLink } from '@angular/router';
+import { RouterLink, RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-category-main',
   standalone: true,
-  imports: [NgFor,RouterLink],
+  imports: [NgFor,RouterLink, RouterModule],
   templateUrl: './category-main.component.html',
   styleUrl: './category-main.component.css'
 })
@@ -17,7 +17,7 @@ export class CategoryMainComponent {
       id: 1,
       image: '../../../assets/images/image5/image1.png',
       description: {
-          name: 'Business',
+          name: 'Startup',
           title: 'Top 6 free website mockup tools 2022',
           shortDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec.'
         
@@ -37,7 +37,7 @@ export class CategoryMainComponent {
       id: 3,
       image: '../../../assets/images/image5/image1.png',
       description: {
-          name: 'Business',
+          name: 'Economy',
           title: 'Ten free foogle fonts that you should use',
           shortDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec.'
         
@@ -47,7 +47,7 @@ export class CategoryMainComponent {
       id: 4,
       image: '../../../assets/images/image5/image1.png',
       description: {
-          name: 'Business',
+          name: 'Technology',
           title: 'What did I learn from doing 50+ design sprints?',
           shortDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec.'
         
