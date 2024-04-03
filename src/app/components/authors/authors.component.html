@@ -10,8 +10,8 @@
                 }
             </div> -->
             <div *ngFor="let item of authors" class="mini-block4">
-                <img [src]="item.image" >
-                <h3>{{item.name}}</h3>
+                <a [routerLink]="['/layout/author', item.id]"><img [src]="item.image" ></a>
+                <h3><a [routerLink]="['/layout/author', item.id]">{{item.name}}</a></h3>
                 <p>{{item.position}}</p>
                 <div *ngFor=" let item of soc " class="social">
                     <a href="#"><img [src]="item.facebook"></a>

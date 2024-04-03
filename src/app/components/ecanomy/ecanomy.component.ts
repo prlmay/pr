@@ -1,12 +1,31 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { CategoryPost } from '../../models/catagory-post';
+import { NgFor } from '@angular/common';
+import { RouterModule } from '@angular/router';
+import { RequestService } from '../../services/request.service';
+import { environment } from '../../../environments/environment';
 
 @Component({
   selector: 'app-ecanomy',
   standalone: true,
-  imports: [],
+  imports: [NgFor, RouterModule],
   templateUrl: './ecanomy.component.html',
   styleUrl: './ecanomy.component.css'
 })
-export class EcanomyComponent {
+export class EcanomyComponent  implements OnInit{
+  constructor(public request: RequestService) { }
 
+  catPost: CategoryPost[] = [];
+
+  ngOnInit(): void {
+    this.getData();
+  }
+  getData () {
+    this.request.getData<CategoryPost[]>(environment.categoryPost.get).subscribe((item) => {
+      this.catPost = item;
+    }, (e) => {
+      console.log('error');
+      console.log(e);
+    })
+  }  
 }

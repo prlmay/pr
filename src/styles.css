@@ -12,3 +12,5 @@
     --dark-violet: #592EA9;
     --black: #21232a;
 }
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

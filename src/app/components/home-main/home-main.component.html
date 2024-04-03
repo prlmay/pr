@@ -16,7 +16,7 @@
                         Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore 
                         eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
                     </p>
-                    <a href="#"> Read More > </a>
+                    <a routerLink="/layout/blog"> Read More > </a>
                 </div>
             </div>
             <div class="block1_2">
@@ -25,7 +25,7 @@
                 <div class="mini-block1-2">
                     <div  class="lightY" *ngFor="let item of posts">
                         By <span>{{item.author}}</span>   l   Aug 23, 2021
-                        <p><a routerLink="/layout/blog_post">{{item.description}}</a></p> 
+                        <p><a [routerLink]="['/layout/blog_post', item.id]">{{item.description}}</a></p> 
                     </div>
                 </div>
             </div>
@@ -48,7 +48,7 @@
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed 
                         eiusmod tempor incididunt ut labore et dolore magna aliqua.
                     </p>
-                    <a href="#"> Read More > </a>
+                    <a routerLink="/layout/about"> Read More > </a>
                 </div>
                 <div class="mini-block2-2">
                     <h4>Our mision</h4>
@@ -79,7 +79,7 @@
                         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim 
                         veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
                     </p>
-                    <a href="#">Discover our story ></a>
+                    <a routerLink="/layout/about">Discover our story ></a>
                 </div>
             </div>
         </div>

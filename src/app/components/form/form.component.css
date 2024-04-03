@@ -11,6 +11,9 @@ input {
     font-weight: 400;
     line-height: 28px; 
 }
+a {
+    text-decoration: none;
+}
 input::placeholder {
     display: flex;
     width: 135.311px;

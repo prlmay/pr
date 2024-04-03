@@ -2,6 +2,9 @@
     background: var(--Lavender, #F4F0F8);
     height: 256px;
 }
+a {
+    text-decoration: none;
+}
 h1 {
     color: var(--Black, #232536);
     text-align: center;

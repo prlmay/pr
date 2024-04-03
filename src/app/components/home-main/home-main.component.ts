@@ -1,10 +1,12 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { CatagoryComponent } from '../catagory/catagory.component';
 import { AuthorsComponent } from '../authors/authors.component';
 import { JoinComponent } from '../join/join.component';
 import { HomePosts } from '../../models/home-posts';
 import { NgFor } from '@angular/common';
 import { RouterLink } from '@angular/router';
+import { RequestService } from '../../services/request.service';
+import { environment } from '../../../environments/environment';
 
 @Component({
   selector: 'app-home-main',
@@ -13,27 +15,20 @@ import { RouterLink } from '@angular/router';
   templateUrl: './home-main.component.html',
   styleUrl: './home-main.component.css'
 })
-export class HomeMainComponent {
-  posts: HomePosts[] = [
-    {
-      id: 1,
-      author: 'John Deo',
-      description: ' 8 Figma design systems that you can download for free today.'
-    },
-    {
-      id: 2,
-      author: 'John Deo',
-      description: ' 8 Figma design systems that you can download for free today.'
-    },
-    {
-      id: 3,
-      author: 'John Deo',
-      description: ' 8 Figma design systems that you can download for free today.'
-    },
-    {
-      id: 4,
-      author: 'John Deo',
-      description: ' 8 Figma design systems that you can download for free today.'
-    },
-  ]
+export class HomeMainComponent implements OnInit {
+  constructor(public request: RequestService) { }
+
+  posts: HomePosts[] = [];
+
+  ngOnInit(): void {
+    this.getData();
+  }
+  getData () {
+    this.request.getData<HomePosts[]>(environment.homePosts.get).subscribe((item) => {
+      this.posts = item;
+    }, (e) => {
+      console.log('error');
+      console.log(e);
+    })
+  } 
 }

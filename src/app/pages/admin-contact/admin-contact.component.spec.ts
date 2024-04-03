@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { BlogMainComponent } from './blog-main.component';
+import { AdminContactComponent } from './admin-contact.component';
 
-describe('BlogMainComponent', () => {
-  let component: BlogMainComponent;
-  let fixture: ComponentFixture<BlogMainComponent>;
+describe('AdminContactComponent', () => {
+  let component: AdminContactComponent;
+  let fixture: ComponentFixture<AdminContactComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [BlogMainComponent]
+      imports: [AdminContactComponent]
     })
     .compileComponents();
     
-    fixture = TestBed.createComponent(BlogMainComponent);
+    fixture = TestBed.createComponent(AdminContactComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

@@ -10,6 +10,9 @@
     text-align: center;
     margin-bottom: 48px;
 }
+a {
+    text-decoration: none;
+}
 .mini-block3 {
     width: 296px;
     height: 228px;

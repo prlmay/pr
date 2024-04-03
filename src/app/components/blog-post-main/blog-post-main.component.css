@@ -2,6 +2,9 @@
     margin: auto;
     width: 1280px;
 }
+a {
+    text-decoration: none;
+}
 .secBlock2 {
     margin-top: 64px;
 }

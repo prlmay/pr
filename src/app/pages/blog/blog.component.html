@@ -1,4 +1,51 @@
-<app-blog-header></app-blog-header>
-<app-blog-main></app-blog-main>
-<app-catagory #catagory></app-catagory>
-<app-join></app-join>
+<header>
+    <div class="header-block">
+        <div class="d-flex">
+            <div>
+                <h3>Featured Post</h3>
+                <h2>
+                    Step-by-step guide to choosing great font pairs
+                </h2>
+                <p>
+                    By <span> John Doe </span> l   May 23, 2022 
+                </p>
+                <p>
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                    nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+                </p>
+                <a href="#">Read More ></a>
+            </div>
+            <div class="head-img"></div>
+        </div>
+    </div>
+</header>
+<main>
+    <div class="container">
+        <section class="section-1">
+            <div>
+                <h2>All posts</h2>
+            </div>
+            @for(item of posts | paginate: {itemsPerPage, currentPage: p}; track item){
+            <div>
+                <div class="BlogAllPostsDiv">
+                    <img src="{{item.image}}" alt="image">
+                    <div>
+                        <a routerLink="/layout/blog_post">{{item.post.link}}</a>
+                        <h2 [routerLink]="['/layout/blog_post/', item.id]">{{item.post.title}}</h2>
+                        <p>{{item.post.text}}</p>
+                    </div>
+                </div>
+            </div>
+            }
+            <div class="section-1_prevbAndNextb">
+                <pagination-controls class="my-pagination" (pageChange)="p = $event"></pagination-controls>
+            </div>
+        </section>
+        <section class="section-2">
+            <h2>Choose A Category</h2>
+            
+        </section>
+        <app-catagory #catagory></app-catagory>
+        <app-join></app-join>
+    </div>
+</main>

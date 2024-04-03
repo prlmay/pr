@@ -3,6 +3,9 @@
     justify-content: flex-end;
     flex-wrap: wrap;
 }
+a {
+    text-decoration: none;
+}
 .header-block {
     position: relative;
 }
@@ -265,35 +268,70 @@ h1 {
 .secBlock5 {
     margin-top: 128px;
 }
-.secBlock5 > .container > h2  {
+a {
+    text-decoration: none;
+}
+.secBlock5 h2 {
     color: var(--Black, #232536);
-    text-align: center;
-    margin-bottom: 48px;
     font-family: Sen;
     font-size: 36px;
     font-style: normal;
     font-weight: 700;
     line-height: 48px; /* 133.333% */
     letter-spacing: -2px;
+    margin-bottom: 48px;
+    text-align: center;
 }
-.secBlock5 .d-flex {
+.d-flex {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    align-items: center;
 }
 .secBlock5 h2 + .d-flex {
-    margin-bottom: 32px;
-    height: 705px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    height: 700px;
+    align-items: center;
 }
-.background {
+.mini-block4 {
     width: 296px;
     height: 324px;
+    flex-shrink: 0;
     background: var(--Light-grey, #F4F4F4);
-    text-align: center;
-    padding: 40px 84px 0 84px;
+    margin: auto;
 }
-.background:hover {
-    background: var(--Light-yellow, #FBF6EA);
+.mini-block4:hover {
+    background: #FBF6EA;
+
+}
+.mini-block4 > a > img{
+    margin: 40px 0 0 84px;
+}
+.secBlock5 .d-flex h3  {
+    line-height: 40px; /* 142.857% */
+    margin-top: 20px;
+    text-align: center;
+}
+.secBlock5 .d-flex h3 > a {
+    color: var(--Black, #232536);
+    font-family: Sen;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: -1px;
+}
+.secBlock5 .d-flex h3 + p {
+    color: var(--Medium-grey, #6D6E76);
+    text-align: center;
+    /* width: 240px; */
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 142.857% */
+    margin-bottom: 20px;
 }
 .social {
     display: flex;
@@ -302,33 +340,11 @@ h1 {
     justify-content: center;
     align-items: flex-start;
     gap: 16px;
+    flex-shrink: 0;
+    margin: auto;
     text-align: center;
 }
-.social img {
+.social > img {
     width: 16px;
     height: 16px;
-}
-.background > img {
-    width: 128px;
-    height: 128px;
-}
-.background h3 {
-    color: var(--Black, #232536);
-    margin-top: 20px;
-    font-family: Sen;
-    font-size: 28px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 40px; /* 142.857% */
-    letter-spacing: -1px;
-}
-.background p {
-    color: var(--Medium-grey, #6D6E76);
-    text-align: center;
-    margin-bottom: 20px;
-    font-family: Inter;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 20px; /* 142.857% */
 }

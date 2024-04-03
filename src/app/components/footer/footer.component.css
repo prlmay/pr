@@ -7,6 +7,9 @@ nav {
     justify-content: space-between;
     align-items: center;
 }
+a {
+    text-decoration: none;
+}
 .pages a {
     color: var(--Light, #FFF);
     font-family: Inter;

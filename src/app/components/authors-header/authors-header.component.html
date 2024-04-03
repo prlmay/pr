@@ -1,18 +1,39 @@
 <header>
     <div class="header-block">
         <div class="container">
-            <div class="d-flex" *ngFor=" let item of author">
-                <img [src]="item.image">
-                <div class="header-text">
-                    <h1>{{item.description}}</h1>
-                    <p>{{item.shortDescription}} </p>
-                    <div class="social" >
-                        <a  href="#"><img [src]="item.social.face" alt=""></a>
-                        <a  href="#"><img [src]="item.social.tw" alt=""></a>
-                        <a  href="#"><img [src]="item.social.insta" alt=""></a>
-                        <a  href="#"><img [src]="item.social.li" alt=""></a>
+            <div class="d-flex" *ngFor=" let item of author" >
+                <!--  -->
+                @if (item.id === 1) {
+                    <!--<p *ngIf="toggle != toggle"></p> -->
+                    <img [src]="item.image" >
+                    <div class="header-text">
+                        <h1>{{item.description}}</h1>
+                        <p>{{item.shortDescription}} </p>
+                        <div class="social" >
+                            <a  href="#"><img [src]="item.social.face" alt=""></a>
+                            <a  href="#"><img [src]="item.social.tw" alt=""></a>
+                            <a  href="#"><img [src]="item.social.insta" alt=""></a>
+                            <a  href="#"><img [src]="item.social.li" alt=""></a>
+                        </div>
                     </div>
-                </div>
+                } @else {
+                    
+                }
+               
+                <!-- @else if (item.id === 2 ) {
+                    <img [src]="item.image">
+                    <div class="header-text">
+                        <h1>{{item.description}}</h1>
+                        <p>{{item.shortDescription}} </p>
+                        <div class="social" >
+                            <a  href="#"><img [src]="item.social.face" alt=""></a>
+                            <a  href="#"><img [src]="item.social.tw" alt=""></a>
+                            <a  href="#"><img [src]="item.social.insta" alt=""></a>
+                            <a  href="#"><img [src]="item.social.li" alt=""></a>
+                        </div>
+                    </div>
+                } -->
+                
             </div>
             <div class="colors">
                 <div></div>

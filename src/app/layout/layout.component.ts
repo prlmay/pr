@@ -11,5 +11,7 @@ import { FooterComponent } from '../components/footer/footer.component';
   styleUrl: './layout.component.css'
 })
 export class LayoutComponent {
-
+  scrollToFooter() {
+    window.scrollTo(0, document.body.scrollHeight);
+  }
 }

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
 @Component({
@@ -8,6 +8,10 @@ import { RouterModule } from '@angular/router';
   templateUrl: './nav.component.html',
   styleUrl: './nav.component.css'
 })
-export class NavComponent {
+export class NavComponent  {
+  @Output() scrollToFooterEvent = new EventEmitter<void>();
 
+  scrollToFooter() {
+    this.scrollToFooterEvent.emit();
+  }
 }

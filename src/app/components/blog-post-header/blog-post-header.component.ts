@@ -2,6 +2,8 @@ import { NgFor } from '@angular/common';
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { BlogPostHeader } from '../../models/bl-post-header';
+import { RequestService } from '../../services/request.service';
+import { environment } from '../../../environments/environment';
 
 @Component({
   selector: 'app-blog-post-header',
@@ -11,17 +13,20 @@ import { BlogPostHeader } from '../../models/bl-post-header';
   styleUrl: './blog-post-header.component.css'
 })
 export class BlogPostHeaderComponent {
-  haeder: BlogPostHeader[] = [
-    {
-      id: 1,
-      authorImage: '../../../assets/images/image3/header-img.png',
-      authorName: ' Andrew Jonson',
-      data: 'Posted on 27th January 2022',
-      title: 'Step-by-step guide to choosing great font pairs',
-      category: {
-        name: 'Startup',
-        image: '../../../assets/images/image3/shuttle.png'
-      }
-    }
-  ]
+  constructor(public request: RequestService) { }
+
+  header: BlogPostHeader[] = [];
+
+  ngOnInit(): void {
+    this.getData();
+  }
+  getData () {
+    this.request.getData<BlogPostHeader[]>(environment.blogPostHeader.get).subscribe((item) => {
+      this.header = item;
+    }, (e) => {
+      console.log('error');
+      console.log(e);
+    })
+  } 
+
 }

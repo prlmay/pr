@@ -1,6 +1,9 @@
 .secBlock5 {
     margin-top: 128px;
 }
+a {
+    text-decoration: none;
+}
 .secBlock5 h2 {
     color: var(--Black, #232536);
     font-family: Sen;
@@ -29,19 +32,21 @@
     background: #FBF6EA;
 
 }
-.mini-block4 > img{
+.mini-block4 > a > img{
     margin: 40px 0 0 84px;
 }
-.secBlock5 .d-flex h3 {
+.secBlock5 .d-flex h3  {
+    line-height: 40px; /* 142.857% */
+    margin-top: 20px;
+    text-align: center;
+}
+.secBlock5 .d-flex h3 > a {
     color: var(--Black, #232536);
     font-family: Sen;
     font-size: 28px;
     font-style: normal;
     font-weight: 700;
-    line-height: 40px; /* 142.857% */
     letter-spacing: -1px;
-    margin-top: 20px;
-    text-align: center;
 }
 .secBlock5 .d-flex h3 + p {
     color: var(--Medium-grey, #6D6E76);
@@ -80,6 +85,9 @@
     }
     .mini-block4 > img{
         margin: 29px 0 0 43px;
+    }
+    .mini-block4[_ngcontent-ng-c1770442980] > a[_ngcontent-ng-c1770442980] > img[_ngcontent-ng-c1770442980] {
+        margin: 40px 0 0 52px;
     }
 }
 @media screen and (max-width: 992px) {

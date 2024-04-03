@@ -42,14 +42,14 @@
                 </div>
             </div>
             <div class="form">
-                <form method="get">
-                    <input type="text" name="name" placeholder="Full Name">
-                    <input type="email" name="email" id="e-mail" placeholder="Your Email">
+                <form method="get" [formGroup]="form" (ngSubmit)="submit()">
+                    <input type="text" name="name" formControlName="name" placeholder="Full Name">
+                    <input type="email" name="email" id="e-mail" formControlName="email" placeholder="Your Email">
                     <select name="" id="">
                         <option value="Query Related">Query Related  </option>
                     </select>
-                    <textarea name="Message" id="" cols="30" rows="10" placeholder="Message"></textarea>
-                    <button>Send Message</button>
+                    <textarea name="Message" id="" cols="30" rows="10"  placeholder="Message"></textarea>
+                    <button [disabled]="form.invalid">Send Message</button>
                 </form>
             </div>
         </div>
